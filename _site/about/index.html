@@ -289,9 +289,9 @@
 			        contentType: "application/json; charset=utf-8"
 			    }).done(function(data) {
 			    	console.log(data);
-			    	if(data.success == "yes"){           
+			    	if(data.success){           
 					      $('#mc_embed_signup').append('<p>success</p>');
-					   } else {
+					} else {
 					   	$('#mc_embed_signup').append('<p>Either you have already signed up for our newsletter or there were errors in the information you provided.</p>');
 					}
 					return false;
