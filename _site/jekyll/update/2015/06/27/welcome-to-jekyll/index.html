@@ -45,19 +45,16 @@
                         <img src="/img/logo-white.svg" />
                     </div>
 
+                    <div class="mc_message" style="display: none;"></div>
+
                     <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup">
-                        <form action="//lorefinewines.us11.list-manage.com/subscribe/post?u=cde5a731f01c6941b39ac1532&amp;id=e401ad35e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <form action="//lorefinewines.us11.list-manage.com/subscribe/post-json?u=cde5a731f01c6941b39ac1532&amp;id=e401ad35e8" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
                             <input type="text" class="first-name form-control" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
                             <input type="text" class="last-name form-control" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
 
                             <input type="email" class="e-mail form-control" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
-
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
 
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_cde5a731f01c6941b39ac1532_e401ad35e8" tabindex="-1" value=""></div>
@@ -67,7 +64,6 @@
                         </form>
                     </div>
 
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
                 </div>
@@ -84,46 +80,53 @@
         </div>
     </footer>
 
-         <!-- jQuery Version 1.11.0 -->
-    <script src="/js/jquery.js"></script>
+        <!-- jQuery Version 1.11.0 -->
+<script src="/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="/js/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="/js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+<!-- Custom Theme JavaScript -->
+<script src="/js/grayscale.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="/js/grayscale.js"></script>
-
-    <script type="text/javascript">
-		$(document).ready(function() {
-			var form = $('#mc-embedded-subscribe-form');
-			$('#mc-embedded-subscribe-form').on('submit', function (e) {
-			    e.preventDefault();
-			    $.ajax({
-			        method: form.attr('method'),
-			        url: '//analoglifestyle.us11.list-manage.com/subscribe/post-json?u=cde5a731f01c6941b39ac1532&amp;id=e401ad35e8',
-			        data: form.serialize(),
-			        dataType: 'jsonp',
-			        contentType: "application/json; charset=utf-8"
-			    }).done(function(data) {
-			    	console.log(data);
-			    	if(data.success){           
-					      $('#mc_embed_signup').append('<p>success</p>');
+<script type="text/javascript">
+	$(document).ready(function() {
+		var form = $('#mc-embedded-subscribe-form');
+		var common_msg = '<p>Please note that all fields are required to sign up, so make sure you have entered your first and last names as well as a valid email address.</p>';
+		form.on('submit', function (e) {
+			$('.mc_message:visible').fadeOut(250);
+		    e.preventDefault();
+		    $.ajax({
+		        method: form.attr('method'),
+		        url: form.attr('action'),
+		        data: form.serialize(),
+		        dataType: 'jsonp',
+		        jsonp: 'c',
+		        contentType: "application/json; charset=utf-8"
+		    }).done(function(data) {
+		    	console.log('Data: ', data);
+		    	if(data.result === 'success'){           
+				      $('.mc_message').html('<p class="success-msg">Success</p><p>' + data.msg + '</p>').fadeIn(250);
+				} else {
+					if(data.msg === '0 - Please enter a value') {
+						$('.mc_message').html('<p class="error-msg">An email address is required.</p>' + common_msg).fadeIn(250);
+					} else if(data.msg === '1 - Please enter a value') {
+						$('.mc_message').html('<p class="error-msg">A first name is required.</p>' + common_msg).fadeIn(250);
+					} else if(data.msg === '2 - Please enter a value') {
+						$('.mc_message').html('<p class="error-msg">A last name is required.</p>' + common_msg).fadeIn(250);
 					} else {
-					   	$('#mc_embed_signup').append('<p>Either you have already signed up for our newsletter or there were errors in the information you provided.</p>');
-					}
-					return false;
-			    });
-			  
-			});
+				   		$('.mc_message').html('<p class="success-msg">' + data.msg + '</p>').fadeIn(250);
+				   	}
+				}
+		    });
+		  
 		});
+	});
 
-    </script>
+</script>
     </body>
 
 </html>
