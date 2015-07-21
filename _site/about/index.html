@@ -1,81 +1,26 @@
 <!DOCTYPE html>
+
 <html>
+
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>About</title>
+
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lore Wine & Spirits is a preeminent wine retailer located in the Freedom Tower in New York. Lore specializes in providing our customers with the best wines for their palate at a reasonable price.">
-    <link rel="canonical" href="https://example.github.io/lore/about/">
+
+    <link rel="canonical" href="http://kdeberna.github.io/lore//about/">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="/lore/style.css">
-    <style type="text/css">
+    <link rel="stylesheet" href="/style.css">
 
-        /*hide other sections*/
-
-        #about, #download, #contact, #map, .navbar-header, .navbar-nav, .navbar-custom, .page-scroll  {
-            display: none;
-        }
-        #main-logo {
-            margin-bottom: 20%;
-        }
-        #main-logo img {
-            width: 50%;
-        }
-
-        body {
-            background: url('/lore/img/intro-bg.jpg') no-repeat;
-            background-size: cover;
-
-        }
-        input {
-            font-family: 'Muli', sans-serif;
-        }
-        input.first-name {
-          width: 49%;
-          display: inline-block;
-          margin-left: -10px;
-        }
-
-        input.last-name {
-          width: 49%;
-          display: inline-block;
-          float: right;
-        }
-
-        input.first-name, input.last-name, input.e-mail {
-            margin-bottom: 10px;
-        }
-
-        #mc_embed_signup .btn-default {
-            border: 0px;
-            background-color: #b98250;
-            color: #fff;
-            width: 100%;
-            transition: all .3s ease-in-out;
-            font-family: 'Muli', sans-serif;
-            text-transform: initial;
-        }
-
-        #mc_embed_signup .btn-default:hover {
-            background-color: #642d50;
-        }
-
-        .intro {
-            background: transparent !important;
-        }
-
-       /* temp disable footer */
-
-       footer {
-         display: none;
-       }
-
-    </style>
+    <!-- These are our custom styles -->
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="/lore/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -88,193 +33,71 @@
     <![endif]-->
 
 </head>
+
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <header class="intro">
+    <div class="intro-body">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
-                </a>
-            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-        <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id="main-logo">
-                            <img src="img/logo-white.svg" />
-                        </div>
-                          <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
-                            <form action="//analoglifestyle.us11.list-manage.com/subscribe/post-json?u=cde5a731f01c6941b39ac1532&amp;id=e401ad35e8" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-
-                            <div class="mc-field-group">
-                                 <input type="text" class="first-name form-control" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
-                                <input type="text" class="last-name form-control" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
-                            </div>
-                             <div class="mc-field-group">
-                                <input type="email" class="e-mail form-control" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                            </div>
-                                <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_cde5a731f01c6941b39ac1532_e401ad35e8" tabindex="-1" value=""></div>
-                                <div class="clear"><input type="submit" value="Let me know more about Lore" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!--End mc_embed_signup-->
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                    <div id="main-logo">
+                        <img src="/img/logo-white.svg" />
                     </div>
-                </div>
-            </div>
-        </div>
-    </header>
-        <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>The Jekyll version is brought to you by <a href="https://github.com/jeromelachaud">Jerome Lachaud</a></p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
 
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                <form action="//analoglifestyle.us11.list-manage.com/subscribe/post?u=cde5a731f01c6941b39ac1532&amp;id=e401ad35e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                    <h2>Subscribe to our mailing list</h2>
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                </label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-LNAME">Last Name </label>
-                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                </div>
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_cde5a731f01c6941b39ac1532_e401ad35e8" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form action="//lorefinewines.us11.list-manage.com/subscribe/post?u=cde5a731f01c6941b39ac1532&amp;id=e401ad35e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                            <input type="text" class="first-name form-control" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
+                            <input type="text" class="last-name form-control" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
+
+                            <input type="email" class="e-mail form-control" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_cde5a731f01c6941b39ac1532_e401ad35e8" tabindex="-1" value=""></div>
+
+                            <input type="submit" value="Let me know more about Lore" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default" />
+
+                        </form>
                     </div>
-                </form>
-                </div>
 
-                <!--End mc_embed_signup-->
-            </div>
-        </div>
-    </section>
-        <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
                 </div>
             </div>
         </div>
-    </section>
-        <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
-                <p>Dolor reprehenderit repellendus, optio labore odio at tempore debitis nisi. Quasi debitis tenetur eaque molestias non porro odio sapiente.</p>
-                <p><a href="mailto:info@lorewine.com">info@lorewine.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">twitter</span></a>
-                    </li>
-                    
-                    <li>
-                        <a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">facebook</span></a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://stackoverflow.com/questions/tagged/jekyll" class="btn btn-default btn-lg"><i class="fa fa-stack-overflow fa-fw"></i> <span class="network-name">stack-overflow</span></a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://bitbucket.org/jekyll" class="btn btn-default btn-lg"><i class="fa fa-bitbucket fa-fw"></i> <span class="network-name">bitbucket</span></a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">github</span></a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </section>
-        <!-- Map Section -->
-    <div id="map"></div>
+    </div>
+</header>
 
-        <!-- Footer -->
+
+            <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; Lore Wine & Spirits 2015</p>
         </div>
     </footer>
 
-     <!-- jQuery Version 1.11.0 -->
-    <script src="/lore/js/jquery.js"></script>
+         <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/lore/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="/lore/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/lore/js/grayscale.js"></script>
+    <script src="/js/grayscale.js"></script>
 
     <script type="text/javascript">
 		$(document).ready(function() {
@@ -302,4 +125,5 @@
 
     </script>
     </body>
+
 </html>

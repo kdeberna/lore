@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Demi"), url("/fonts/AvenirNextLTPro-Demi.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Regular"), url("/fonts/AvenirNextLTPro-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Bold"), url("/fonts/AvenirNextLTPro-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Demi Italic"), url("/fonts/AvenirNextLTPro-DemiIt.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Italic"), url("/fonts/AvenirNextLTPro-It.woff") format("woff"); }
+input {
+  font-family: 'Avenir Next LT Pro Regular', sans-serif; }
+  input.first-name {
+    width: 49%;
+    display: inline-block;
+    margin-left: -10px;
+    margin-bottom: 10px; }
+  input.last-name {
+    width: 49%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 10px; }
+  input.e-mail {
+    margin-bottom: 10px; }
+
+#main-logo {
+  margin-bottom: 20%; }
+
+#main-logo img {
+  width: 50%; }
+
+body {
+  background: url(/img/intro-bg.jpg) no-repeat;
+  background-size: cover; }
+
+#mc_embed_signup .btn-default {
+  border: 0px;
+  background-color: #b98250;
+  color: #fff;
+  width: 100%;
+  transition: all .3s ease-in-out;
+  font-family: 'Avenir Next LT Pro Demi', sans-serif;
+  text-transform: initial; }
+#mc_embed_signup .btn-default:hover {
+  background-color: #642d50; }
+
+.intro {
+  background: transparent !important; }
+
+/* temp disable footer */
+footer {
+  display: none; }
