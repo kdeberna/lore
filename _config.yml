@@ -1,9 +1,9 @@
 # Site settings
-title: Grayscale
-email: your-email@domain.com
+title: Lore Wine & Spirits
+email: info@lorewine.com
 url: https://example.github.io
 baseurl: /lore
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Lore Wine & Spirits is a preeminent wine retailer located in the Freedom Tower in New York. Lore specializes in providing our customers with the best wines for their palate at a reasonable price."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -11,7 +11,7 @@ color:
   links: '#219ab3'
 
 # Footer settings
-footer: Your Website
+footer: Lore Wine & Spirits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

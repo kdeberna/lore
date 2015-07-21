@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grayscale</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <title>Lore Wine &amp; Spirits</title>
+    <description>Lore Wine &amp; Spirits is a preeminent wine retailer located in the Freedom Tower in New York. Lore specializes in providing our customers with the best wines for their palate at a reasonable price.</description>
     <link>https://example.github.io/lore/</link>
     <atom:link href="https://example.github.io/lore/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Jul 2015 11:03:54 -0400</pubDate>
-    <lastBuildDate>Sun, 05 Jul 2015 11:03:54 -0400</lastBuildDate>
+    <pubDate>Sun, 05 Jul 2015 15:32:56 -0400</pubDate>
+    <lastBuildDate>Sun, 05 Jul 2015 15:32:56 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
