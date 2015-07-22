@@ -7,23 +7,47 @@
 input {
     font-family: 'Avenir Next LT Pro Regular', sans-serif;
 
+    &.form-control {
+	    height: 44px;
+	    font-size: 16px;
+		border: none;
+		color: #666;
+		padding: 9px 15px 6px 15px;
+	}
+
     &.first-name {
-		width: 49%;
-		display: inline-block;
-		margin-left: -10px;
 		margin-bottom: 10px;
     }
 
     &.last-name {
-		width: 49%;
-		display: inline-block;
-		float: right;
 		margin-bottom: 10px;
     }
 
     &.e-mail {
     	margin-bottom: 10px;
     }
+}
+
+input.form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ddd;
+}
+
+input.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #ddd;
+   opacity: 1;
+}
+
+input.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #ddd;
+   opacity: 1;
+}
+
+input.form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #ddd;
+}
+
+.center-block {
+	float: none;
 }
 
 .mc_message {
@@ -64,13 +88,13 @@ input {
 		background-color: #b98250;
 		color: #fff;
 		width: 100%;
-		transition: all .3s ease-in-out;
+		transition: background-color 100ms ease-in-out;
 		font-family: 'Avenir Next LT Pro Demi', sans-serif;
 		text-transform: initial;
 	}
 
 	.btn-default:hover {
-	    background-color: #642d50;
+	    background-color: #d28f52;
 	}
 }
 
@@ -87,3 +111,29 @@ input {
        footer {
          display: none;
        }
+
+@media only screen and (min-width: 768px) {
+	input {
+	    &.first-name {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+	    }
+
+	    &.last-name {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+	    }
+	}
+
+	.col-fname {
+		padding-right: 1px;
+	}
+
+	.col-lname {
+		padding-left: 1px;
+	}
+
+}
+
+
+

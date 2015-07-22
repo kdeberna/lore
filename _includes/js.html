@@ -26,17 +26,23 @@
 		        contentType: "application/json; charset=utf-8"
 		    }).done(function(data) {
 		    	console.log('Data: ', data);
-		    	if(data.result === 'success'){           
-				      $('.mc_message').html('<p class="success-msg">Success</p><p>' + data.msg + '</p>').fadeIn(250);
+		    	if(data.result === 'success') {
+		    		form.fadeOut(250, function() {	
+						$('.mc_message').html('<p class="success-msg">Thank you for your interest in Lore Wine & Spirits.</p><p>' + data.msg + '</p>').fadeIn(250);
+		    		});
 				} else {
-					if(data.msg === '0 - Please enter a value') {
-						$('.mc_message').html('<p class="error-msg">An email address is required.</p>' + common_msg).fadeIn(250);
-					} else if(data.msg === '1 - Please enter a value') {
+					if(data.msg.charAt(0) === '0') { // Email input error
+						if(data.msg === '0 - Please enter a value') {
+							$('.mc_message').html('<p class="error-msg">An email address is required.</p>' + common_msg).fadeIn(250);
+						} else {
+							$('.mc_message').html('<p class="success-msg">' + data.msg.substring(4, data.msg.length) + '</p>' + common_msg).fadeIn(250);
+						}
+					} else if(data.msg === '1 - Please enter a value') { // First Name field error
 						$('.mc_message').html('<p class="error-msg">A first name is required.</p>' + common_msg).fadeIn(250);
-					} else if(data.msg === '2 - Please enter a value') {
+					} else if(data.msg === '2 - Please enter a value') { // Last Name field error
 						$('.mc_message').html('<p class="error-msg">A last name is required.</p>' + common_msg).fadeIn(250);
-					} else {
-				   		$('.mc_message').html('<p class="success-msg">' + data.msg + '</p>').fadeIn(250);
+					} else { // Other errors, such as already subscribed email
+				   		$('.mc_message').html('<p class="success-msg">' + data.msg + '</p>' + common_msg).fadeIn(250);
 				   	}
 				}
 		    });
