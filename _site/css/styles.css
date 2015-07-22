@@ -2,27 +2,27 @@
   font-family: 'Avenir Next LT Pro Demi';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Demi"), url("/fonts/AvenirNextLTPro-Demi.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Demi"), url('{{ "/fonts/AvenirNextLTPro-Demi.woff" | prepend: site.baseurl }}') format("woff"); }
 @font-face {
   font-family: 'Avenir Next LT Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Regular"), url("/fonts/AvenirNextLTPro-Regular.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Regular"), url('{{ "/fonts/AvenirNextLTPro-Regular.woff" | prepend: site.baseurl }}') format("woff"); }
 @font-face {
   font-family: 'Avenir Next LT Pro Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Bold"), url("/fonts/AvenirNextLTPro-Bold.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Bold"), url('{{ "/fonts/AvenirNextLTPro-Bold.woff" | prepend: site.baseurl }}') format("woff"); }
 @font-face {
   font-family: 'Avenir Next LT Pro Demi Italic';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Demi Italic"), url("/fonts/AvenirNextLTPro-DemiIt.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Demi Italic"), url('{{ "/fonts/AvenirNextLTPro-DemiIt.woff" | prepend: site.baseurl }}') format("woff"); }
 @font-face {
   font-family: 'Avenir Next LT Pro Italic';
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next LT Pro Italic"), url("/fonts/AvenirNextLTPro-It.woff") format("woff"); }
+  src: local("Avenir Next LT Pro Italic"), url('{{ "/fonts/AvenirNextLTPro-It.woff" | prepend: site.baseurl }}') format("woff"); }
 input {
   font-family: 'Avenir Next LT Pro Regular', sans-serif; }
   input.form-control {
