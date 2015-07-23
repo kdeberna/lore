@@ -1,76 +1,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
-    <style type="text/css">
 
-        /*hide other sections*/
-
-        #about, #download, #contact, #map, .navbar-header, .navbar-nav, .navbar-custom, .page-scroll  {
-            display: none;
-        }
-        #main-logo {
-            margin-bottom: 20%;
-        }
-        #main-logo img {
-            width: 50%;
-        }
-
-        body {
-            background: url('/lore/img/intro-bg.jpg') no-repeat;
-            background-size: cover;
-
-        }
-        input {
-            font-family: 'Muli', sans-serif;
-        }
-        input.first-name {
-          width: 49%;
-          display: inline-block;
-          margin-left: -10px;
-        }
-
-        input.last-name {
-          width: 49%;
-          display: inline-block;
-          float: right;
-        }
-
-        input.first-name, input.last-name, input.e-mail {
-            margin-bottom: 10px;
-        }
-
-        #mc_embed_signup .btn-default {
-            border: 0px;
-            background-color: #b98250;
-            color: #fff;
-            width: 100%;
-            transition: all .3s ease-in-out;
-            font-family: 'Muli', sans-serif;
-            text-transform: initial;
-        }
-
-        #mc_embed_signup .btn-default:hover {
-            background-color: #642d50;
-        }
-
-        .intro {
-            background: transparent !important;
-        }
-
-       /* temp disable footer */
-
-       footer {
-         display: none;
-       }
-
-    </style>
+    <!-- These are our custom styles -->
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">

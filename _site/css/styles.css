@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Demi"), url("/fonts/AvenirNextLTPro-Demi.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Regular"), url("/fonts/AvenirNextLTPro-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Bold"), url("/fonts/AvenirNextLTPro-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Demi Italic"), url("/fonts/AvenirNextLTPro-DemiIt.woff") format("woff"); }
+@font-face {
+  font-family: 'Avenir Next LT Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Next LT Pro Italic"), url("/fonts/AvenirNextLTPro-It.woff") format("woff"); }
+input {
+  font-family: 'Avenir Next LT Pro Regular', sans-serif; }
+  input.form-control {
+    height: 44px;
+    font-size: 16px;
+    border: none;
+    color: #666;
+    padding: 9px 15px 6px 15px; }
+  input.first-name {
+    margin-bottom: 10px; }
+  input.last-name {
+    margin-bottom: 10px; }
+  input.e-mail {
+    margin-bottom: 10px; }
+
+input.form-control::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ddd; }
+
+input.form-control:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ddd;
+  opacity: 1; }
+
+input.form-control::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ddd;
+  opacity: 1; }
+
+input.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ddd; }
+
+.center-block {
+  float: none; }
+
+.mc_message {
+  margin-bottom: 50px; }
+  .mc_message p {
+    font-family: 'Avenir Next LT Pro Regular', sans-serif;
+    text-align: left;
+    margin: 0 0 15px;
+    font-size: 20px;
+    line-height: 1.3; }
+    .mc_message p.error-msg {
+      font-family: 'Avenir Next LT Pro Bold', sans-serif; }
+    .mc_message p.success-msg {
+      font-family: 'Avenir Next LT Pro Bold', sans-serif; }
+
+#main-logo {
+  margin-bottom: 20%; }
+
+#main-logo img {
+  width: 50%; }
+
+body {
+  background: url(/img/intro-bg.jpg) no-repeat;
+  background-size: cover; }
+
+#mc_embed_signup .btn-default {
+  border: 0px;
+  background-color: #b98250;
+  color: #fff;
+  width: 100%;
+  transition: background-color 100ms ease-in-out;
+  font-family: 'Avenir Next LT Pro Demi', sans-serif;
+  text-transform: initial; }
+#mc_embed_signup .btn-default:hover {
+  background-color: #d28f52; }
+
+#mce-responses {
+  font-family: 'Avenir Next LT Pro Regular', sans-serif; }
+
+.intro {
+  background: transparent !important; }
+
+/* temp disable footer */
+footer {
+  display: none; }
+
+@media only screen and (min-width: 768px) {
+  input.first-name {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  input.last-name {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+  .col-fname {
+    padding-right: 1px; }
+
+  .col-lname {
+    padding-left: 1px; } }

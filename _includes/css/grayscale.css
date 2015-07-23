@@ -45,16 +45,14 @@ p {
 }
 
 a {
-    color: {{ site.color.links }};
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    text-decoration: none;
-    color: #11505d;
+    text-decoration: underline;
+    color: #ffffff;
 }
 
 .light {
