@@ -183,4 +183,7 @@ footer {
     width: 100%; }
 
   footer {
-    position: static; } }
+    position: static; }
+
+  .intro {
+    padding-bottom: 20px; } }
