@@ -199,8 +199,6 @@ body {
 	background: transparent !important;
 }
 
-/* temp disable footer */
-
 footer {
     font-family: 'Avenir Next LT Pro Regular', sans-serif;
     text-align: center;
@@ -258,5 +256,9 @@ footer {
 @media only screen and (max-width : 480px) {
 	#main-logo img {
 	    width: 100%;
+	}
+
+	footer {
+		position: static;
 	}
 }
