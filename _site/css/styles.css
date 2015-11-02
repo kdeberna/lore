@@ -51,6 +51,9 @@
     height: 100%;
     object-fit: cover; }
 
+video::-webkit-media-controls {
+  display: none; }
+
 span.opening-date {
   font-family: 'Avenir Next LT Pro Bold', sans-serif; }
 

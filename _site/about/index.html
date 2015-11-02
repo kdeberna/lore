@@ -36,7 +36,9 @@
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <div class="header-message">
-    <span class="opening-date">Opening 2016</span> | Westfield World Trade Center, NYC
+    <span class="opening-date">Opening 2016</span>
+    <span class="seperator hidden-xs"> | </span><br class="visible-xs-block" />
+    <span class="location">Westfield World Trade Center, NYC</span>
 </div>
 
         <header class="intro">
@@ -79,8 +81,10 @@
 </header>
 
 <div id="movie-container">
-    <video autoplay loop poster="/lore/img/intro-bg.jpg">  
+    <video autoplay loop poster="/lore/img/intro-bg.jpg" controls= "false">  
         <source src="/lore/img/vineyard.mp4" type="video/mp4" />  
+        <source src="/lore/img/vineyard.ogg" type="video/ogg" />  
+        <source src="/lore/img/vineyard.webm" type="video/webm" />  
     </video> 
 </div>
         <!-- Footer -->
