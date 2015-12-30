@@ -1,9 +1,9 @@
 # Site settings
 title: Lore Wine & Spirits
-email: info@lorewine.com
-url: http://kdeberna.github.io/lore/
+email: info@drinklore.com
+url: http://drinklore.com
 baseurl: /lore
-description: "Lore Wine & Spirits is a preeminent wine retailer located in the Freedom Tower in New York. Lore specializes in providing our customers with the best wines for their palate at a reasonable price."
+description: "Lore Wine & Spirits is the preeminent wine retailer located in the Freedom Tower in New York. Lore specializes in providing our customers with the best wines for their palate at a reasonable price."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
